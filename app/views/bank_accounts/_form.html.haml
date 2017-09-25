@@ -1,0 +1,15 @@
+= form_for @bank_account do |f|
+  .field
+    = f.label :institution
+    = f.text_field :institution
+  .field
+    = f.label :description
+    = f.text_area :description, placeholder: 'Your Description'
+  .field
+    = f.label :amount
+    = f.number_field :amount
+  .field
+    = f.label :active
+    = f.check_box :active
+  .field
+    = f.submit

@@ -1,0 +1,8 @@
+%h1
+  Editing Bank Account :
+  = @bank_account.institution
+%hr
+
+= render(partial: 'form')
+
+= link_to 'Back', bank_accounts_path(@bank_account)
